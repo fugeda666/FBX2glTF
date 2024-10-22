@@ -97,7 +97,7 @@ json MaterialData::serialize() const {
   json result = {
       {"name", name},
       {"alphaMode", isTransparent ? "BLEND" : "OPAQUE"},
-      {"doubleSided", isDoubleSided},
+      {"doubleSided", true},
       {"extras",
        {{"fromFBX",
          {{"shadingModel", Describe(shadingModel)},
