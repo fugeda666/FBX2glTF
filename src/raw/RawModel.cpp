@@ -183,7 +183,7 @@ int RawModel::AddMaterial(
   material.type = materialType;
   material.info = materialInfo;
   material.userProperties = userProperties;
-  material.isDoubleSided = isDoubleSided;
+  material.isDoubleSided = true;
 
   for (int i = 0; i < RAW_TEXTURE_USAGE_MAX; i++) {
     material.textures[i] = textures[i];
