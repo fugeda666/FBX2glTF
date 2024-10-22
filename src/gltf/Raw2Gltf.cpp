@@ -453,7 +453,7 @@ ModelData* Raw2Gltf(
       }
 
       // Setting DoubleSided
-      const bool isDoubleSided = material.isDoubleSided;
+      const bool isDoubleSided = true;
       std::shared_ptr<MaterialData> mData = gltf->materials.hold(new MaterialData(
           material.name,
           isTransparent,
